@@ -1,0 +1,221 @@
+.top-cart {
+    height: 400px;
+    background-image: url(img/cart.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.heading-big {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 70px;
+    margin-top: 127px;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+    &__name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &__item {
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__info {
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &__heading {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__heading:hover {
+        text-decoration: underline;
+    }
+
+    &__text {
+        color: #888;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__price {
+        color: #050505;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__link-box {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 210%;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+
+    &__form {
+        border-radius: 20px;
+        background: #F7F6F6;
+        height: 556px;
+        grid-column: span 4;
+    }
+
+    &__content {
+        grid-column: span 8;
+    }
+
+    &__number {
+        width: 71px;
+        height: 51px;
+        border-radius: 6px;
+        background: #F7F6F6;
+        outline: none;
+        border: none;
+        color: var(--Color---7, #000);
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 210%;
+        text-align: center;
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+
+        &::placeholder {
+            color: #000;
+        }
+    }
+
+    &__button-box {
+        display: flex;
+        gap: 7px;
+        margin-top: 18px;
+    }
+
+    &__button {
+        border-radius: 50px;
+        border: 1px solid #000;
+        display: block;
+        width: 200px;
+        height: 37px;
+        color: #020202;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_form {
+            align-self: center;
+            width: 290px;
+        }
+    }
+
+    &__button:hover {
+        background: var(--Color---7, #000);
+        color: #FFF;
+    }
+}
+
+.order {
+    padding-top: 42px;
+    padding-left: 27px;
+    padding-right: 32px;
+    box-sizing: border-box;
+
+    &__box {
+        padding-top: 35px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 41px;
+    }
+
+    &__heading {
+        color: #000;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &__item {
+        outline: none;
+        padding-bottom: 3px;
+        background: transparent;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: none;
+        border-bottom: 1px solid #CACDD8;
+
+        &::placeholder {
+            color: black;
+        }
+    }
+
+    &__result {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+        margin-top: 23px;
+        margin-bottom: 18px;
+    }
+}
